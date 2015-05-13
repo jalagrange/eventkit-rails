@@ -15,4 +15,10 @@ EventKit::Application.routes.draw do
 			resources :users
 		end
 	end
+
+	namespace(:auxiliar, defaults: {format: :json}) do
+
+		resources :schools, only: :show
+
+	end
 end
