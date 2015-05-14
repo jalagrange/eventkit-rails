@@ -1,6 +1,6 @@
-if @event
-  json.event do
+if @events
+  json.array! @events do |event|
     json.partial! 'auxiliar/schools/show',
-      event: @event
+      event: event
   end
 end

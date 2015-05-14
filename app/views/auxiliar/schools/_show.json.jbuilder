@@ -1,3 +1,3 @@
-json.(@event, :id,
+json.(event, :id,
               :email,
               :category)
