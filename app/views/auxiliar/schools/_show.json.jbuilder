@@ -1,3 +1,7 @@
-json.(event, :id,
+json.(event,  :id,
+              :event,
+              :category,
+              :additional_arguments,
               :email,
-              :category)
+              :reason,
+              :created_at)
