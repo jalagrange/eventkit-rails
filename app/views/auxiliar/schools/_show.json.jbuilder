@@ -3,5 +3,4 @@ json.(event,  :id,
               :category,
               :additional_arguments,
               :email,
-              :reason,
               :created_at)
