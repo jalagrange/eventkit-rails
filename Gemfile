@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'bcrypt', '~> 3.1.7'
 gem "active_model_serializers", '>= 0.9.0'
 gem "ember-rails", "~>0.18"
+gem 'authlogic', '3.3.0'
+gem "cancancan", "1.10"
 
 group :doc do
 	gem 'sdoc', require: false
