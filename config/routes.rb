@@ -18,7 +18,9 @@ EventKit::Application.routes.draw do
 
 	namespace(:auxiliar, defaults: {format: :json}) do
 
-		resources :schools, only: :show
+		resources :schools, only: [:show] do
+			get :generate_stats, on: :member
+		end
 
 	end
 end
