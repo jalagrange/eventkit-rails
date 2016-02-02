@@ -35,5 +35,5 @@ group :doc do
 	gem 'sdoc', require: false
 end
 
-ruby "2.0.0"
+ruby "2.2.3"
 # ruby "2.1.3"
