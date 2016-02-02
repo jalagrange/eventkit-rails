@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513202410) do
+ActiveRecord::Schema.define(version: 20160202223618) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "event_school_relationships", force: true do |t|
     t.integer  "event_id"
@@ -19,6 +22,8 @@ ActiveRecord::Schema.define(version: 20150513202410) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "event_school_relationships", ["school_id"], name: "index_event_school_relationships_on_school_id", using: :btree
 
   create_table "events", force: true do |t|
     t.integer  "timestamp",            limit: 8
@@ -44,6 +49,10 @@ ActiveRecord::Schema.define(version: 20150513202410) do
     t.datetime "updated_at"
     t.integer  "asm_group_id",         limit: 2
   end
+
+  add_index "events", ["category"], name: "index_events_on_category", using: :btree
+  add_index "events", ["created_at"], name: "index_events_on_created_at", using: :btree
+  add_index "events", ["event"], name: "index_events_on_event", using: :btree
 
   create_table "settings", force: true do |t|
     t.string   "name"
