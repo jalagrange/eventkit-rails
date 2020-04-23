@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+ruby "2.4.6"
+
+gem 'rails', '4.2.11.1'
+
 group :development, :test do
 	gem 'rspec'
 	gem 'rspec-rails'
@@ -15,10 +19,9 @@ end
 
 gem 'pg'
 gem 'unicorn'
-gem 'json'
+gem 'json', '~> 2.3'
 gem 'bourbon'
-gem 'rails', '4.0.8'
-gem 'sass-rails', '~> 4.0.2'
+gem 'sass-rails', '5.0.4'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
@@ -30,10 +33,8 @@ gem "ember-rails", "~>0.18"
 gem 'authlogic', '3.3.0'
 gem "cancancan", "1.10"
 gem 'oj'
+gem 'sprockets', '~> 3.7', '>= 3.7.2'
 
 group :doc do
 	gem 'sdoc', require: false
 end
-
-ruby "2.2.3"
-# ruby "2.1.3"
