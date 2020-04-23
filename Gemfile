@@ -28,7 +28,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '2.4.0'
 gem 'bcrypt', '~> 3.1.7'
-gem "active_model_serializers", '>= 0.9.0'
+gem 'active_model_serializers', '~> 0.10.10'
 gem "ember-rails", "~>0.18"
 gem 'authlogic', '3.3.0'
 gem "cancancan", "1.10"
