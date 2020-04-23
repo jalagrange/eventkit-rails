@@ -17,7 +17,7 @@ group :production do
 	gem 'rails_12factor'
 end
 
-gem 'pg'
+gem 'pg', '0.18.4'
 gem 'unicorn'
 gem 'json', '~> 2.3'
 gem 'bourbon'
