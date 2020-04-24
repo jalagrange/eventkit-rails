@@ -8,7 +8,9 @@
 #     /config/initializers/active_model_serializer.rb
 #
 
-ActiveModel::Serializer.setup do |config|
-	config.embed = :ids
-	config.embed_in_root = true
-end
+#ActiveModel::Serializer.setup do |config|
+#	config.embed = :ids
+#	config.embed_in_root = true
+#end
+
+ActiveRecord::Base.include_root_in_json = true
